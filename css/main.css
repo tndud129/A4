@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul, li{list-style: none;}
+body{background-color: #f2f2f2; color: #333333; font-family: 'ChosunGu';}
+
+#wrap{
+    position: relative;
+    width: 1200px;
+    /* height: 700px;
+    background-color: lightblue; */
+    margin: 0 auto;
+}
+
+
+
+/* header영역 */
+#header{
+    width: 100%;
+    height: 100px;
+    /* background-color: antiquewhite; */
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    /* border: 1px red solid; */
+    padding-top: 30px;
+}
+
+.logo a{display: block;}
+
+.logo a img{}
+
+.nav{float: right; margin-top: 50px; margin-right: 10px;}
+
+.main{}
+
+.main>li{
+    position: relative;
+    float: left;
+}
+
+.main>li>a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff5050;
+    border-radius: 8px 8px 0 0 ;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.main > li:hover > a{
+    background-color: #5b9bd5;
+}
+
+.sub{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 11;
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #5b9bd5;
+}
+
+.sub li a:hover{
+    background-color: #bfe0ff;
+}
+
+.sub_bg{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: #5b9bd5;
+    width: 1200px;
+    height: 180px;
+    z-index: 10;
+}
+
+/* container 영역 */
+#container{
+    width: 100%;
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+/* fade view 영역 */
+.view{
+    height: 300px;
+}
+
+.fade{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.fade li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.fade li a{
+    display: block;
+}
+
+.fade li a img{}
+
+
+/* contents 영역 */
+
+.contents{}
+
+.contents > div{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.contents h2{
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 12px 12px 0 0 ;
+    background-color: gray;
+}
+
+.contents ul{
+    width: 100%;
+    height: 170px;
+    background-color: gray;
+    border-radius: 0 12px 12px;
+    padding: 10px;
+}
+
+.notice{}
+
+.notice ul{}
+
+.notice ul li{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dotted white;
+}
+
+.notice ul li a{
+    float: left;
+    width: 75%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice ul li span{
+    float: right;
+}
+
+
+
+
+.gallery{}
+
+.gallery ul{
+    text-align: center;
+}
+
+.gallery ul li{
+    display: inline-block;
+}
+
+.gallery ul li a{}
+
+.gallery ul li a img{
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.gallery ul li a img:hover{
+    opacity: 1;
+}
+
+.baro{}
+.baro p{
+    height: 165px;
+    background-color: gray;
+    padding: 4px 0;
+}
+.baro p a{}
+.baro p a img{}
+
+
+
+
+
+/* footer */
+#footer{
+    height: 100px;
+    background-color: lightgray;
+}
