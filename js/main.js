@@ -29,6 +29,17 @@ $(function(){
         console.log(n);
 
     } , 2000);
+
+
+    // 팝업영역
+
+    $(".pop_up").click(function(){
+        $(".pop").show();
+    }) //click
+
+    $(".button").click(function(){
+        $(".pop").hide();
+    }) //click
     
 
 
